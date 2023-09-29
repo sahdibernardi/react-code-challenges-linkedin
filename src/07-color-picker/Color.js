@@ -1,6 +1,6 @@
-export default function Color ({ hex, name }) {
+export default function Color ({ hex, name, changeColor }) {
   return (
-    <button
+    <button onClick={() => changeColor(hex)}
       className='color-square'
       style={{ backgroundColor: hex }}
     >
